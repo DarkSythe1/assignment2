@@ -2,7 +2,6 @@
 import os
 import subprocess
 import pwd
-import shadow
 import argparse
 from datetime import datetime
 
@@ -186,5 +185,3 @@ def main():
             sys.exit(1)
         change_expiration_date(args.username, args.expiration_date, args.log)
 
-if __name__ == "__main__":
-    main()
